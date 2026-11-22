@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wolfmoon Travel | Descubre Oaxaca</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--navy:#101c2d;--gold:#d9b875;--gold2:#8d6c32;--bg:#f7f5ef;--card:#fff;--ink:#1d2938;--muted:#5f6b7a;--line:#e3dfd5;--head:#101c2d;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#0d1623;--card:#152233;--ink:#e8ecf2;--muted:#a3adba;--line:#2a3a4e;--head:#f1f3f7}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#0d1623;--card:#152233;--ink:#e8ecf2;--muted:#a3adba;--line:#2a3a4e;--head:#f1f3f7}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;font-family:"DM Sans",sans-serif;color:var(--ink);background:var(--bg)}
+a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1140px,calc(100% - 40px));margin:auto}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:#101c2d;z-index:30}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:#101c2d;color:#fff}
+.nav{height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;font-weight:700;letter-spacing:2px;font-size:13px;line-height:1.3}.mark{width:38px;height:38px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-size:20px}
+nav{display:flex;gap:24px;font-size:13px}nav a:hover{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;background:var(--gold);color:#101c2d;padding:12px 20px;border-radius:3px;font-weight:700;font-size:13px;border:0;cursor:pointer}.btn:hover{filter:brightness(1.07)}.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--line)}.btn.sm{padding:8px 12px;font-size:12px}
+.menu{display:none;background:none;border:1px solid #526071;color:#fff;padding:8px 11px;border-radius:3px}
+.hero{min-height:600px;display:flex;align-items:center;color:#fff;background:radial-gradient(circle at 80% 30%,rgba(217,184,117,.28),transparent 40%),linear-gradient(120deg,#08121f,#16324a 55%,#1f5a62)}
+.hero-in{max-width:680px;padding:90px 0}.eye{color:var(--gold);font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase}.hero h1{font:600 clamp(42px,7vw,74px)/1.05 "Playfair Display",serif;margin:20px 0}.hero p{color:#dfe4ea;line-height:1.8;max-width:560px}.acts{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.out{border:1px solid rgba(255,255,255,.7);color:#fff;padding:12px 20px;border-radius:3px;font-weight:600;font-size:13px}
+.trust{background:var(--card);padding:20px 0}.tg{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;text-align:center}.tg strong{display:block;font-size:14px;color:var(--head)}.tg span{font-size:12px;color:var(--muted)}
+section{padding:84px 0}.sh{text-align:center;max-width:680px;margin:0 auto 40px}.sh h2{font:600 clamp(30px,4vw,42px)/1.15 "Playfair Display",serif;color:var(--head);margin:12px 0}.sh p{color:var(--muted);line-height:1.75;font-size:14px}
+.dest{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.d{position:relative;min-height:300px;border-radius:5px;overflow:hidden;color:#fff;display:flex;align-items:flex-end;padding:20px}.d:before{content:attr(data-e);position:absolute;top:18px;right:20px;font-size:44px;opacity:.9}.d:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(5,14,24,.7),transparent 65%)}.d div{position:relative;z-index:1}.d h3{font:600 24px "Playfair Display";margin:0 0 6px}.d p{font-size:12px;line-height:1.5;margin:0;color:#e6e9ed}
+.pk{background:var(--card)}.pg{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.p{border:1px solid var(--line);background:var(--bg);border-radius:5px;overflow:hidden;display:flex;flex-direction:column}.p .top{height:150px;display:grid;place-items:center;font-size:58px}.pb{padding:22px;display:flex;flex-direction:column;flex:1}.tag{font-size:10px;letter-spacing:1.4px;text-transform:uppercase;color:var(--gold2);font-weight:700}.p h3{font:600 23px "Playfair Display";color:var(--head);margin:8px 0}.p p{font-size:13px;line-height:1.7;color:var(--muted);margin:0 0 10px}.p ul{padding-left:18px;color:var(--muted);font-size:12px;line-height:1.9;margin:0 0 16px}.pf{margin-top:auto;border-top:1px solid var(--line);padding-top:14px;display:flex;justify-content:space-between;align-items:center;font-size:12px;gap:8px}.pf b{color:var(--head);font-size:15px}
+.book{background:#101c2d;color:#fff}.bg{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:start}.book h2{font:600 clamp(30px,4vw,42px)/1.15 "Playfair Display";margin:12px 0}.book p{color:#c5ccd5;line-height:1.8;font-size:14px}.how{margin-top:22px;display:grid;gap:14px}.how div{display:flex;gap:12px;font-size:13px;color:#c5ccd5;line-height:1.5}.how b{color:var(--gold);font:600 22px "Playfair Display"}
+form{background:var(--card);color:var(--ink);padding:26px;border-radius:5px}.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.f{margin-bottom:14px}.f label{display:block;font-size:12px;font-weight:700;margin-bottom:6px;color:var(--head)}.f input,.f select,.f textarea{width:100%;padding:11px;border:1px solid var(--line);border-radius:3px;font:14px "DM Sans";background:var(--bg);color:var(--ink)}.f textarea{min-height:70px;resize:vertical}.f input:focus,.f select:focus,.f textarea:focus{outline:2px solid var(--gold)}.err{color:#c0392b;font-size:12px;min-height:16px;margin:0 0 8px}
+.tot{background:var(--bg);border:1px dashed var(--line);border-radius:4px;padding:14px;margin-bottom:14px;font-size:13px;display:flex;justify-content:space-between;align-items:center;gap:10px}.tot b{font-size:22px;color:var(--head);font-family:"Playfair Display"}
+.ok{background:var(--card);color:var(--ink);padding:26px;border-radius:5px;border-top:4px solid var(--gold)}.ok h3{font:600 26px "Playfair Display";color:var(--head);margin:0 0 6px}.code{display:inline-block;font:700 22px monospace;letter-spacing:3px;background:var(--bg);padding:8px 14px;border-radius:3px;margin:8px 0 14px;color:var(--head)}.ok dl{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;font-size:13px;margin:0 0 16px}.ok dt{color:var(--muted)}.ok dd{margin:0;font-weight:500}.ok small{display:block;color:var(--muted);line-height:1.6;margin-top:12px}.hide{display:none}
+.mine{padding:60px 0}.mine h2{font:600 30px "Playfair Display";color:var(--head);margin:0 0 6px}.mine>.wrap>p{color:var(--muted);font-size:13px;margin:0 0 20px}.res{display:grid;gap:12px}.r{background:var(--card);border:1px solid var(--line);border-radius:5px;padding:16px 18px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}.r b{color:var(--head)}.r span{font-size:12px;color:var(--muted);display:block;margin-top:3px}.st{font-size:10px;letter-spacing:1px;text-transform:uppercase;font-weight:700;padding:3px 8px;border-radius:20px;background:#e8f3ea;color:#2d6a3e}.st.c{background:#f6e3e0;color:#a33}.ra{display:flex;gap:8px;flex-wrap:wrap}.empty{color:var(--muted);font-size:13px;padding:18px;border:1px dashed var(--line);border-radius:5px;text-align:center}
+.about{background:var(--card)}.ag{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.ai{height:420px;border-radius:4px;background:radial-gradient(circle at 70% 25%,#f0d9a2 0 8%,transparent 9%),linear-gradient(180deg,#27485f,#101c2d 70%);display:grid;place-items:center;font-size:110px;color:var(--gold)}.about h2{font:600 clamp(30px,4vw,44px)/1.15 "Playfair Display";color:var(--head);margin:14px 0}.about p{color:var(--muted);line-height:1.85;font-size:14px}.vals{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px}.v{border-top:1px solid var(--line);padding-top:12px}.v strong{color:var(--gold2);font-size:13px}.v span{display:block;color:var(--muted);font-size:12px;margin-top:5px;line-height:1.5}
+.contact{text-align:center}.contact h2{font:600 38px "Playfair Display";color:var(--head);margin:12px 0}.contact p{color:var(--muted);font-size:14px;line-height:1.8;max-width:560px;margin:0 auto}.ci{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-top:22px;font-size:13px}
+footer{background:#0b1523;color:#b9c1cc;padding:28px 0;font-size:11px}.fr{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}.fr b{color:#fff;letter-spacing:2px}
+@media(max-width:850px){.dest{grid-template-columns:1fr 1fr}.pg{grid-template-columns:1fr 1fr}.bg,.ag{grid-template-columns:1fr;gap:34px}}
+@media(max-width:650px){.menu{display:block}nav{display:none;position:absolute;top:70px;left:0;right:0;background:#101c2d;padding:18px 24px;flex-direction:column}nav.open{display:flex}.hide-m{display:none}.tg,.dest,.pg,.row,.vals{grid-template-columns:1fr}.ai{height:280px}section{padding:62px 0}.hero{min-height:540px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#inicio"><span class="mark">☾</span><span>WOLFMOON<br>TRAVEL</span></a>
+<nav id="nav"><a href="#inicio">Inicio</a><a href="#destinos">Destinos</a><a href="#paquetes">Paquetes</a><a href="#reservar">Reservar</a><a href="#mis">Mis reservas</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a></nav>
+<a class="btn hide-m" href="#reservar">Reservar ahora</a><button class="menu" id="menu" aria-label="Abrir menú">☰</button>
+</div></header>
+<main>
+<section class="hero" id="inicio" style="padding:0"><div class="wrap"><div class="hero-in">
+<div class="eye">Viajes con identidad · Oaxaca, México</div>
+<h1>Descubre lugares.<br>Vive historias.</h1>
+<p>Explora la riqueza natural, cultural y gastronómica del Istmo y la Costa de Oaxaca. Reserva tu próxima experiencia en minutos.</p>
+<div class="acts"><a class="btn" href="#reservar">Reservar mi viaje</a><a class="out" href="#paquetes">Ver paquetes</a></div>
+</div></div></section>
+<div class="trust"><div class="wrap tg"><div><strong>Experiencias regionales</strong><span>Tradición, cultura y naturaleza</span></div><div><strong>Atención personalizada</strong><span>Itinerarios pensados para cada grupo</span></div><div><strong>Reserva en línea</strong><span>Código de reserva al instante</span></div></div></div>
+
+<section id="destinos"><div class="wrap">
+<div class="sh"><div class="eye">Oaxaca te espera</div><h2>Destinos que cuentan historias</h2><p>Desde paisajes costeros hasta comunidades llenas de tradición.</p></div>
+<div class="dest">
+<div class="d" data-e="🏖️" style="background:linear-gradient(160deg,#2a9bb0,#145a73)"><div><h3>La Costa</h3><p>Playas, bahías y paisajes para disfrutar el Pacífico.</p></div></div>
+<div class="d" data-e="🏛️" style="background:linear-gradient(160deg,#c98a4b,#7a4a24)"><div><h3>El Istmo</h3><p>Una región de identidad, historia y expresiones culturales.</p></div></div>
+<div class="d" data-e="🌿" style="background:linear-gradient(160deg,#4f9a6a,#1f5138)"><div><h3>Rutas naturales</h3><p>Manantiales, miradores y rincones por descubrir.</p></div></div>
+<div class="d" data-e="🍲" style="background:linear-gradient(160deg,#b5503c,#6b2417)"><div><h3>Ruta gastronómica</h3><p>Sabores locales y cocina que conserva sus raíces.</p></div></div>
+</div></div></section>
+
+<section class="pk" id="paquetes"><div class="wrap">
+<div class="sh"><div class="eye">Viaja a tu manera</div><h2>Experiencias destacadas</h2><p>Precio por persona. Los niños (3 a 11 años) pagan tarifa reducida.</p></div>
+<div class="pg" id="pkgs"></div>
+</div></section>
+
+<section class="book" id="reservar"><div class="wrap bg">
+<div><div class="eye">Reserva en línea</div><h2>Asegura tu lugar.</h2><p>Elige tu experiencia, la fecha y el número de viajeros. Al terminar recibirás un código de reserva y podrás confirmarla con nuestro equipo.</p>
+<div class="how"><div><b>1</b><span>Completa el formulario y revisa el total estimado.</span></div><div><b>2</b><span>Obtén tu código de reserva al instante.</span></div><div><b>3</b><span>Envíalo por WhatsApp o correo para confirmar y coordinar el pago.</span></div></div></div>
+<div>
+<form id="form" novalidate>
+<div class="f"><label for="pkg">Experiencia</label><select id="pkg"></select></div>
+<div class="row"><div class="f"><label for="date">Fecha del viaje</label><input id="date" type="date" required></div><div class="f"><label for="tel">Teléfono / WhatsApp</label><input id="tel" type="tel" placeholder="10 dígitos" required></div></div>
+<div class="row"><div class="f"><label for="ad">Adultos</label><input id="ad" type="number" min="1" max="20" value="2"></div><div class="f"><label for="ch">Niños (3–11 años)</label><input id="ch" type="number" min="0" max="20" value="0"></div></div>
+<div class="row"><div class="f"><label for="name">Nombre completo</label><input id="name" placeholder="Tu nombre" required></div><div class="f"><label for="email">Correo electrónico</label><input id="email" type="email" placeholder="tucorreo@ejemplo.com" required></div></div>
+<div class="f"><label for="note">Comentarios (opcional)</label><textarea id="note" placeholder="Punto de salida, alergias, celebraciones…"></textarea></div>
+<div class="tot"><span id="brk">—</span><b id="tot">$0</b></div>
+<p class="err" id="err" role="alert"></p>
+<button class="btn" type="submit" style="width:100%">Confirmar reserva</button>
+</form>
+<div class="ok hide" id="ok"></div>
+</div></div></section>
+
+<section class="mine" id="mis"><div class="wrap">
+<h2>Mis reservas</h2><p>Las reservas hechas desde este dispositivo aparecen aquí.</p>
+<div class="res" id="res"></div>
+</div></section>
+
+<section class="about" id="nosotros"><div class="wrap ag">
+<div class="ai">☾</div>
+<div><div class="eye">Nuestra esencia</div><h2>Conectamos personas con experiencias auténticas.</h2><p>Wolfmoon Travel promueve los atractivos turísticos del Istmo y la Costa oaxaqueña mediante recorridos organizados y atención cercana.</p>
+<div class="vals"><div class="v"><strong>Misión</strong><span>Ofrecer experiencias que valoren la cultura, naturaleza e identidad de Oaxaca.</span></div><div class="v"><strong>Visión</strong><span>Ser referente de turismo responsable y riqueza regional.</span></div><div class="v"><strong>Compromiso</strong><span>Respeto a las comunidades y consumo local.</span></div><div class="v"><strong>Servicio</strong><span>Información clara y atención amable en cada etapa.</span></div></div></div>
+</div></section>
+
+<section class="contact" id="contacto"><div class="wrap">
+<div class="eye">Estamos para ayudarte</div><h2>¿Dudas antes de reservar?</h2><p>Escríbenos y te orientamos sobre rutas, fechas y detalles de cada experiencia.</p>
+<div class="ci"><a id="waLink" class="btn" target="_blank" rel="noopener">WhatsApp</a><a id="mailLink" class="btn alt">Correo</a></div>
+<div class="ci"><span>⌖ Istmo y Costa de Oaxaca, México</span></div>
+</div></section>
+</main>
+<footer><div class="wrap fr"><b>☾ WOLFMOON TRAVEL</b><span>Descubre Oaxaca. Vive la experiencia.</span><span>© 2026 Wolfmoon Travel</span></div></footer>
+
+<script>
+// ===== CONFIGURACIÓN: edita estos datos =====
+const CFG={wa:"521XXXXXXXXXX",email:"agrega-tu-correo@ejemplo.com",key:"wolfmoon_reservas_v1"};
+const PK={
+ costa:{n:"Escapada a la Costa",tag:"Naturaleza · Costa",e:"🌊",g:"linear-gradient(135deg,#2a9bb0,#145a73)",a:1200,c:600,d:"Un recorrido para disfrutar del paisaje costero y pasar tiempo junto al mar.",l:["Transporte turístico","Recorrido panorámico","Tiempo libre en el destino"]},
+ istmo:{n:"Tradición istmeña",tag:"Cultura · Istmo",e:"🏛️",g:"linear-gradient(135deg,#c98a4b,#7a4a24)",a:950,c:475,d:"Acércate a las costumbres, la arquitectura y las celebraciones de la región.",l:["Visitas culturales","Comercios locales","Guía durante el recorrido"]},
+ sabores:{n:"Sabores de Oaxaca",tag:"Gastronomía · Oaxaca",e:"🍲",g:"linear-gradient(135deg,#b5503c,#6b2417)",a:800,c:400,d:"Descubre ingredientes y platillos representativos de la región.",l:["Paradas gastronómicas","Consumo en negocios locales","Guía durante el recorrido"]}
+};
+const $=id=>document.getElementById(id);
+const money=n=>n.toLocaleString("es-MX",{style:"currency",currency:"MXN",maximumFractionDigits:0});
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fdate=s=>new Date(s+"T12:00:00").toLocaleDateString("es-MX",{weekday:"long",day:"numeric",month:"long",year:"numeric"});
+let mem=[];
+const load=()=>{try{return JSON.parse(localStorage.getItem(CFG.key)||"[]")}catch(e){return mem}};
+const save=l=>{mem=l;try{localStorage.setItem(CFG.key,JSON.stringify(l))}catch(e){}};
+
+// Paquetes y selector
+$("pkgs").innerHTML=Object.entries(PK).map(([k,p])=>`<article class="p"><div class="top" style="background:${p.g}">${p.e}</div><div class="pb"><div class="tag">${p.tag}</div><h3>${p.n}</h3><p>${p.d}</p><ul>${p.l.map(x=>`<li>${x}</li>`).join("")}</ul><div class="pf"><span>Desde <b>${money(p.a)}</b></span><button class="btn sm" data-pk="${k}">Reservar</button></div></div></article>`).join("");
+$("pkg").innerHTML=Object.entries(PK).map(([k,p])=>`<option value="${k}">${p.n} — ${money(p.a)} adulto</option>`).join("");
+document.querySelectorAll("[data-pk]").forEach(b=>b.onclick=()=>{$("pkg").value=b.dataset.pk;showForm();update();$("reservar").scrollIntoView()});
+
+// Fecha mínima: mañana
+const t=new Date();t.setDate(t.getDate()+1);
+$("date").min=$("date").value=[t.getFullYear(),String(t.getMonth()+1).padStart(2,"0"),String(t.getDate()).padStart(2,"0")].join("-");
+
+// Total
+const nums=()=>({a:Math.max(0,parseInt($("ad").value)||0),c:Math.max(0,parseInt($("ch").value)||0)});
+function total(){const p=PK[$("pkg").value],{a,c}=nums();return{p,a,c,sum:a*p.a+c*p.c}}
+function update(){const{a,c,sum,p}=total();$("brk").textContent=`${a} adulto${a==1?"":"s"} × ${money(p.a)}`+(c?` + ${c} niño${c==1?"":"s"} × ${money(p.c)}`:"");$("tot").textContent=money(sum)}
+["pkg","ad","ch"].forEach(i=>$(i).addEventListener("input",update));update();
+
+// Mensajes
+function msg(r){return `Hola Wolfmoon Travel, quiero confirmar mi reserva ${r.code}:\n• ${PK[r.pkg].n}\n• Fecha: ${r.date}\n• ${r.a} adulto(s), ${r.c} niño(s)\n• Total estimado: ${money(r.sum)}\n• A nombre de: ${r.name} (${r.tel})`+(r.note?`\n• Comentarios: ${r.note}`:"")}
+const waUrl=r=>`https://wa.me/${CFG.wa}?text=${encodeURIComponent(msg(r))}`;
+const mailUrl=r=>`mailto:${CFG.email}?subject=${encodeURIComponent("Reserva "+r.code)}&body=${encodeURIComponent(msg(r))}`;
+$("waLink").href=`https://wa.me/${CFG.wa}`;$("mailLink").href=`mailto:${CFG.email}`;
+
+// Enviar formulario
+$("form").addEventListener("submit",e=>{
+ e.preventDefault();const err=$("err");err.textContent="";
+ const{a,c,sum}=total(),name=$("name").value.trim(),email=$("email").value.trim(),tel=$("tel").value.trim(),date=$("date").value;
+ if(name.length<3)return err.textContent="Escribe tu nombre completo.";
+ if(!/^\S+@\S+\.\S+$/.test(email))return err.textContent="Escribe un correo válido.";
+ if(tel.replace(/\D/g,"").length<10)return err.textContent="Escribe un teléfono de 10 dígitos.";
+ if(!date||date<$("date").min)return err.textContent="Elige una fecha a partir de mañana.";
+ if(a<1)return err.textContent="Debe viajar al menos un adulto.";
+ if(a+c>40)return err.textContent="Para grupos de más de 40 personas, contáctanos directamente.";
+ const code="WM-"+Array.from(crypto.getRandomValues(new Uint8Array(4)),b=>"ABCDEFGHJKLMNPQRSTUVWXYZ23456789"[b%32]).join("");
+ const r={code,pkg:$("pkg").value,date,a,c,sum,name,email,tel,note:$("note").value.trim(),status:"pendiente",created:Date.now()};
+ save([r,...load()]);render();showOk(r);$("form").reset();$("date").value=$("date").min;$("ad").value=2;$("ch").value=0;update();
+});
+function showOk(r){
+ $("form").classList.add("hide");const o=$("ok");o.classList.remove("hide");
+ o.innerHTML=`<h3>¡Reserva registrada!</h3><div>Tu código de reserva:</div><div class="code">${r.code}</div><dl><dt>Experiencia</dt><dd>${esc(PK[r.pkg].n)}</dd><dt>Fecha</dt><dd>${esc(fdate(r.date))}</dd><dt>Viajeros</dt><dd>${r.a} adulto(s), ${r.c} niño(s)</dd><dt>Total estimado</dt><dd>${money(r.sum)}</dd><dt>A nombre de</dt><dd>${esc(r.name)}</dd></dl><div class="ra"><a class="btn" target="_blank" rel="noopener" href="${waUrl(r)}">Confirmar por WhatsApp</a><a class="btn alt" href="${mailUrl(r)}">Confirmar por correo</a><button class="btn alt" id="again">Nueva reserva</button></div><small>Tu reserva queda pendiente hasta que el equipo de Wolfmoon Travel la confirme y coordine el pago. El total es una estimación y puede ajustarse al confirmar.</small>`;
+ $("again").onclick=showForm;$("reservar").scrollIntoView();
+}
+function showForm(){$("ok").classList.add("hide");$("form").classList.remove("hide")}
+
+// Mis reservas
+function render(){
+ const l=load(),box=$("res");
+ if(!l.length){box.innerHTML='<div class="empty">Aún no tienes reservas en este dispositivo.</div>';return}
+ box.innerHTML=l.map(r=>`<div class="r"><div><b>${r.code} · ${esc(PK[r.pkg]?PK[r.pkg].n:"")}</b><span>${esc(fdate(r.date))} · ${r.a} adulto(s), ${r.c} niño(s) · ${money(r.sum)}</span></div><div class="ra"><span class="st ${r.status=="cancelada"?"c":""}">${r.status}</span>${r.status=="cancelada"?"":`<a class="btn sm" target="_blank" rel="noopener" href="${waUrl(r)}">WhatsApp</a><a class="btn sm alt" href="${mailUrl(r)}">Correo</a><button class="btn sm alt" data-x="${r.code}">Cancelar</button>`}</div></div>`).join("");
+ box.querySelectorAll("[data-x]").forEach(b=>b.onclick=()=>{
+  if(!confirm("¿Cancelar la reserva "+b.dataset.x+"?"))return;
+  save(load().map(r=>r.code==b.dataset.x?{...r,status:"cancelada"}:r));render();
+ });
+}
+render();
+
+// Menú móvil
+$("menu").onclick=()=>$("nav").classList.toggle("open");
+$("nav").querySelectorAll("a").forEach(a=>a.onclick=()=>$("nav").classList.remove("open"));
+</script>
+</body>
+</html>
